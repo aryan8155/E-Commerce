@@ -310,9 +310,9 @@ footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; hei
     .container { padding: 0 1rem; }
     
     /* Navigation */
-    nav { height: 70px; gap: 1rem; }
+    nav { height: auto; gap: 0.8rem; padding: 0.8rem 0; }
     .logo { font-size: 1.4rem; }
-    .search-bar { display: none; }
+    .search-bar { width: 100%; min-width: 100%; max-width: 100%; order: 3; }
     .nav-actions { gap: 1rem; font-size: 1rem; }
     .nav-actions span { display: none; }
     
@@ -372,9 +372,9 @@ footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; hei
     .container { padding: 0 1.2rem; }
     
     /* Navigation */
-    nav { height: 75px; gap: 1.2rem; }
+    nav { height: auto; gap: 1rem; padding: 0.8rem 0; }
     .logo { font-size: 1.5rem; }
-    .search-bar { max-width: 300px; }
+    .search-bar { width: 100%; min-width: 100%; max-width: 100%; order: 3; }
     .search-bar input { padding: 0.8rem 0.9rem; font-size: 0.9rem; }
     .search-bar button { padding: 0 1rem; }
     .nav-actions { gap: 1.2rem; }
