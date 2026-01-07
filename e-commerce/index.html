@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODERN-SHOP | Premium E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo" onclick="renderView('home')">MODERN<span>SHOP</span></div>
+            
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search products..." onkeypress="if(event.key==='Enter') searchProducts()">
+                <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+            </div>
+
+            <ul class="nav-actions">
+                <li onclick="toggleAuth()"><i class="far fa-user"></i> <span class="hide-mobile">Account</span></li>
+                <li onclick="renderView('cart')" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-count">0</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="sub-nav">
+            <div class="container">
+                <a href="#" onclick="renderView('home')">Home</a>
+                <a href="#" onclick="renderView('shop')">All Products</a>
+                <a href="#">New Arrivals</a>
+                <a href="#">Trending</a>
+                <a href="#">Deals</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area (Dynamic) -->
+    <main id="main-content">
+        <!-- JS will inject content here -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>MODERNSHOP</h3>
+                <p>Premium quality products delivered to your doorstep. Experience the future of online shopping.</p>
+                <div class="socials">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" onclick="renderView('shop')">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Newsletter</h4>
+                <p>Subscribe for exclusive deals.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Email">
+                    <button>Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ModernShop. Secure Checkout Guaranteed.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleAuth()">&times;</span>
+            <div id="auth-form">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="btn-primary">Sign In</button>
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
