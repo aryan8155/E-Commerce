@@ -11,7 +11,7 @@ const products = [
     { id: 9, name: "Premium Leather Backpack", price: 250, category: "Fashion", img: "images/backpack.jpeg" },
     { id: 10, name: "Mechanical Gaming Keyboard", price: 169, category: "Electronics", img: "images/keyboard.jpeg" },
     { id: 11, name: "Wireless Mouse Pro", price: 79, category: "Electronics", img: "images/mouse.jpeg" },
-    { id: 12, name: "Standing Desk Converter", price: 399, category: "Furniture", img: "images/desktop.jpeg" },
+    { id: 12, name: "Standing Desk Converter", price: 399, category: "Furniture", img: "images/dekstop.jpeg" },
     { id: 13, name: "Modern Desk Lamp", price: 95, category: "Furniture", img: "images/lamp.jpeg" },
     { id: 14, name: "Cozy Knit Sweater", price: 65, category: "Fashion", img: "images/sweater.jpeg" },
     { id: 15, name: "Classic Denim Jeans", price: 89, category: "Fashion", img: "images/jeans.jpeg" },
